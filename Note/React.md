@@ -6,12 +6,16 @@ Babelというソフトウェアを用いているので、読み込みが必要
 
 
 ### renderメソッド、その他Reactの動き確認
-<!-- const appEl1 = document.querySelector("#app");
+```html:sample
+const appEl1 = document.querySelector("#app");
 const root = ReactDOM.createRoot(appEl1);
-    root.render(<h1>Hello World</h1>); -->
+    root.render(<h1>Hello World</h1>);
+```/
 上記書き方は、React ver18以降に推奨されている書き方
 以前は、下記のようだったが、今は非推奨
-<!-- ReactDOM.render(<h1>Hello World</h1>, appEl1) -->
+```html:sample
+ReactDOM.render(<h1>Hello World</h1>, appEl1)
+```/
 
 ## コンポーネント
 ・画面の各構成要素をReactで定義したもの
@@ -22,22 +26,24 @@ const root = ReactDOM.createRoot(appEl1);
 ・疎結合になる（バグを減らせる）
 
 コンポーネントはJavaScriptの関数として定義する
-<!-- function Welcome() {
+```html:sample
+function Welcome() {
     return (<h1>ようこそ！</h1>); // コンポーネントはJSXを返す
 }
 
-<Welcome /> // コンポーネントの実行 -->
+<Welcome />
+```/
 
 ☆ポイント
 ・関数名の最初の文字は必ず大文字で作成する（babelの決まり上、先頭が大文字でないと関数だと認識しない）
 
-# インストール
+## インストール
 npm i -g create-react-app
 
-# create-react-appドキュメント
+## create-react-appドキュメント
 npm docs create-react-app
 
-# プロジェクトの作成方法
+## プロジェクトの作成方法
 create-react-app {フォルダ名}
 
 
