@@ -9,7 +9,7 @@ Babelというソフトウェアを用いているので、読み込みが必要
 `const appEl1 = document.querySelector("#app");`
 `const root = ReactDOM.createRoot(appEl1);`
 `root.render(<h1>Hello World</h1>);`
-上記書き方は、React ver18以降に推奨されている書き方
+上記書き方は、React ver18以降に推奨されている書き方<br>
 以前は、下記のようだったが、今は非推奨
 `ReactDOM.render(<h1>Hello World</h1>, appEl1)`
 
